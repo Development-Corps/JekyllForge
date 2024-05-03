@@ -31,9 +31,9 @@ header: true
     {% if page.header != false %}
         {% include navigation.html %}
     {% endif %}
-    <div class="container">
-        {{ content }}
-    </div>
+
+    {{ content }} <!-- Conect Rendered Here -->
+
     {% include footer.html %}
 
     <!--Just including scripts across the site to do _stuff_ (this one is bootstrap 5)-->
