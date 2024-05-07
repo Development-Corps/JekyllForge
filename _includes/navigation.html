@@ -1,5 +1,9 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/images/favicons/favicon-32x32.png" width="32" height="32" class="d-inline-block align-top" alt="Development Corps Logo">
+            Development Corps
+          </a>
         <!-- Iterate over the _data/navigation file and create a link for each-->
         {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
