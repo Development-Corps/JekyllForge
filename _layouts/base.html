@@ -13,6 +13,7 @@ header: true
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {%- unless page.layout == 'landing' -%}
         {{ page.title | append: ' | ' }}
@@ -30,11 +31,14 @@ header: true
 <body>
     <!-- Header inclusion based on page.header (default true if not passed) -->
     {% if page.header != false %}
-        {% include navigation.html %}
+    {% include navigation.html %}
     {% endif %}
-    <div class="container">
-        {{ content }} <!-- Conect Rendered Here -->
-    </div>
+
+    <main role="main" class="container my-5">
+        <!-- <div class="container"> -->
+            {{ content }} <!-- Conect Rendered Here -->
+        <!-- </div> -->
+    </main>
 
     {% include footer.html %}
 
