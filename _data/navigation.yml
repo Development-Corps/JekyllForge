@@ -4,5 +4,5 @@
   link: /about
 - name: Blog
   link: /blog
-- name: "404(test)"
-  link: 404
+- name: 404(test)
+  link: /404
